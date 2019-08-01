@@ -3,7 +3,6 @@ FROM php:7.3.4-fpm
 RUN apt-get update && apt-get install -yq \
 	zip \
     libzip-dev \
-    zlib-dev \
     git \
     && docker-php-ext-configure zip --with-libzip \
     && docker-php-ext-install zip \
